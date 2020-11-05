@@ -8,7 +8,7 @@ body{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 8%;
 }
 
 .H1{
@@ -70,11 +70,28 @@ p{
   width: 60%;
   transform: rotate(25deg);
   margin-left: 15%;
+  position: absolute;
+}
+
+@media (max-width: 1028px) {
+
+  .container-fluid{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+
 }
 
 /* features-Section */
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+
 }
 
 .features-box{
@@ -133,4 +150,25 @@ p{
   padding: 2% 3%;
 }
 
-/* zsdfsazdgdfszgzgzgkhankirpolasnny */
+/* cta-section */
+#cta{
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 7% 15%;
+  color: #fff;
+}
+
+.cta-h3{
+  font-size: 3.5rem;
+
+  line-height: 1.5;
+}
+
+/* footer-section */
+#footer{
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
